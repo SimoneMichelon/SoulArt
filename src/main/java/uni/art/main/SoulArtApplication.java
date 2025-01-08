@@ -8,6 +8,7 @@ public class SoulArtApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SoulArtApplication.class, args);
+		
 	}
 
 }
