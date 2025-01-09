@@ -12,7 +12,9 @@ import uni.art.main.repository.QuestionRepo;
 public class QuestionService {
 	
 	@Autowired
-	QuestionRepo questionRepo ;
+	QuestionRepo questionRepo;
+	
+	public QuestionService() {}
 	
 	public List<Question> getAll() {
 		return questionRepo.findAll();

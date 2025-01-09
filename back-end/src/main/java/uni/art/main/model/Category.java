@@ -16,7 +16,7 @@ public class Category {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "category_id")
 	int id;
-	
+
 	@NotNull
 	@Column(name = "category_name")
 	String name;

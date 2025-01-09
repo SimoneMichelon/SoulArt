@@ -8,19 +8,21 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 
 
 @Entity(name = "question")
+@Data
 public class Question {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int id;
-	
+
 	@NotNull
 	@Column(name = "question_body")
 	String body;
-	
+
 	@NotNull
 	@ManyToOne
 	@JoinColumn(name = "question_category_Id", referencedColumnName = "category_id")
